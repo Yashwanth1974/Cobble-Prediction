@@ -1,0 +1,86 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.9225280326197758,
+    "precision": 0.014195583596214511,
+    "recall": 0.3,
+    "f1": 0.02710843373493976,
+    "auc_roc": 0.9156315821147019,
+    "auc_pr": 0.0208316443824011,
+    "true_positives": 18,
+    "false_positives": 1250,
+    "true_negatives": 15367,
+    "false_negatives": 42,
+    "false_alarm_rate": 0.07522416802070168,
+    "threshold": 0.05
+  },
+  "xgboost": {
+    "accuracy": 0.9964022306170175,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "auc_roc": 0.9197408276664458,
+    "auc_pr": 0.03208617585412296,
+    "true_positives": 0,
+    "false_positives": 0,
+    "true_negatives": 16617,
+    "false_negatives": 60,
+    "false_alarm_rate": 0.0,
+    "threshold": 0.5
+  },
+  "lightgbm": {
+    "accuracy": 0.9950230856868741,
+    "precision": 0.12903225806451613,
+    "recall": 0.06666666666666667,
+    "f1": 0.08791208791208792,
+    "auc_roc": 0.9286975186054441,
+    "auc_pr": 0.0574882628927063,
+    "true_positives": 4,
+    "false_positives": 27,
+    "true_negatives": 16590,
+    "false_negatives": 56,
+    "false_alarm_rate": 0.0016248420292471566,
+    "threshold": 0.05
+  },
+  "xgboost_tuned": {
+    "accuracy": 0.9721772501049349,
+    "precision": 0.07203389830508475,
+    "recall": 0.5666666666666667,
+    "f1": 0.12781954887218044,
+    "auc_roc": 0.9703576658442157,
+    "auc_pr": 0.05848407982252204,
+    "true_positives": 34,
+    "false_positives": 438,
+    "true_negatives": 16179,
+    "false_negatives": 26,
+    "false_alarm_rate": 0.02635854847445387,
+    "threshold": 0.08000000000000002
+  },
+  "best_params": {
+    "n_estimators": 267,
+    "max_depth": 10,
+    "learning_rate": 0.0145573158363075,
+    "subsample": 0.7986829979431639,
+    "colsample_bytree": 0.6685081944640198,
+    "min_child_weight": 4,
+    "gamma": 8.504316883036939,
+    "scale_pos_weight": 140.10971322710023
+  },
+  "lead_time": {
+    "mean_sec": 702.0,
+    "min_sec": 702.0,
+    "max_sec": 702.0
+  },
+  "selected_features_count": 150,
+  "top_10_shap_features": {
+    "13_0_STD01_T_FBK_Torque_Norm": 0.9534898400306702,
+    "9_69_CZ75_COA_M75_02_Vib_Sns_Val": 0.6803088188171387,
+    "mfe_cusum_spread": 0.3587370216846466,
+    "torq_n_19_rmax_30s": 0.35652604699134827,
+    "torq_n_01_rmin_10s": 0.3048411011695862,
+    "vib_2_rstd_10s": 0.27150458097457886,
+    "torq_n_04_rstd_30s": 0.25584927201271057,
+    "vib_1_rstd_10s": 0.19399073719978333,
+    "torq_ratio_15_16": 0.19154690206050873,
+    "torq_n_06_rmin_30s": 0.1475263237953186
+  }
+}
